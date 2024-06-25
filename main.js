@@ -33,10 +33,10 @@ function subtrair() {
 
 function imc(){
 
-    let altura = document.querySelector('#altura');
     let peso = document.querySelector('#peso');
+    let altura = document.querySelector('#altura');
 
-    let resultadoIMC = Number(peso)/(Number(altura) * Number(altura))
+    let resultadoIMC = Number(peso.value) / (Number(altura.value) * Number(altura.value))
 
     document.querySelector('#imc').value = resultadoIMC.toFixed(2);
     let consideracoes = document.querySelector('#consideracoes')
